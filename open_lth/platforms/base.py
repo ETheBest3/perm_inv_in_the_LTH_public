@@ -46,7 +46,8 @@ class Platform(Hparams):
 
     @property
     def is_distributed(self):
-        return not self.is_distributed or self.rank == 0
+        return False
+        #return not self.is_distributed or self.rank == 0
 
     @property
     def rank(self):
